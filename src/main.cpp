@@ -21,6 +21,9 @@ public:
         props->setStr(PROP_MQTT_USER, MQTT_USER);
         props->setStr(PROP_MQTT_PASS, MQTT_PASS);
 
+        // Joy
+        props->setProperty(PROP_JOYSTICK, new JoystickProperties());
+
         Application::setup();
     }
 };
